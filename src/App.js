@@ -85,8 +85,8 @@ function InnerApp() {
   };
 
   return (
-    <div className="app">
-      <h1>Task Board</h1>
+    <div className="app" style={{backgroundColor:'#111827', height:'700px'}}>
+      <h1 style={{color:'white'}}>Task Board</h1>
      
       <TaskForm onSubmit={add} />
       <DragDropContext onDragEnd={handleDrag}>

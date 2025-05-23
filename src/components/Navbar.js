@@ -17,16 +17,16 @@ function Navbar() {
       <ul
         style={{
           display: "flex",
-          gap: "28px", // Tailwind gap-7 = 1.75rem ≈ 28px
+          gap: "28px", 
           listStyle: "none",
           margin: 0,
           padding: 0,
         }}
       >
-        <li><a href="" style={linkStyle}>Home</a></li>
-        <li><a href="" style={linkStyle}>About</a></li>
-        <li><a href="" style={linkStyle}>Work</a></li>
-        <li><a href="" style={linkStyle}>Contact</a></li>
+        <li>Home</li>
+        <li>About</li>
+        <li>Work</li>
+        <li>Contact</li>
       </ul>
     </nav>
   );

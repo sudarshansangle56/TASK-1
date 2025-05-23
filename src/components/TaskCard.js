@@ -5,7 +5,7 @@ function TaskCard({ task, index, onDelete }) {
   return (
     <Draggable draggableId={task.id} index={index}>
       {(provided) => (
-        <div
+        <div 
           className="task-card"
           {...provided.draggableProps}
           {...provided.dragHandleProps}

@@ -92,7 +92,7 @@ function InnerApp() {
      
       <TaskForm onSubmit={add} />
       <DragDropContext onDragEnd={handleDrag}>
-        <div className="columns">
+        <div className="columns" >
           {data.columnOrder.map((columnId) => {
             const column = data.columns[columnId];
             const tasks = column.taskIds.map(id => data.tasks[id]);

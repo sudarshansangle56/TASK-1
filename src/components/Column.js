@@ -8,7 +8,7 @@ function Column({ column, tasks, onDeleteTask }) {
       <h2>{column.title}</h2>
       <Droppable droppableId={column.id}>
         {(provided) => (
-          <div
+          <div 
             className="task-list"
             ref={provided.innerRef}
             {...provided.droppableProps}

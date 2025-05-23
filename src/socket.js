@@ -1,4 +1,3 @@
-// src/socket.js
 const channel = new BroadcastChannel('realtime-board');
 
 export const emitUpdate = (data) => {

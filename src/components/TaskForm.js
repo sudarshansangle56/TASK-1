@@ -13,18 +13,21 @@ function TaskForm({ onSubmit }) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form style={{  display:'flex', gap:'7px', padding: '10px',}}
+    onSubmit={handleSubmit}>
       <input
+        style={{borderRadius:'5px', border: '1px solid black'}}
         value={title}
         onChange={(e) => setTitle(e.target.value)}
-        placeholder="Task title"
+        placeholder="title"
       />
       <textarea
+      style={{borderRadius:'5px', border: '1px solid black'}}
         value={description}
         onChange={(e) => setDescription(e.target.value)}
-        placeholder="Task description (optional)"
+        placeholder="description"
       />
-      <button type="submit">Add Task</button>
+      <button  style={{borderRadius:'5px', border: '1px solid black', width:'110px', cursor:'pointer'}} type="submit">Add</button>
     </form>
   );
 }

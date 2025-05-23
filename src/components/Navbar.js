@@ -18,6 +18,7 @@ function Navbar() {
         style={{
           display: "flex",
           gap: "28px", 
+          cursor:'pointer',
           listStyle: "none",
           margin: 0,
           padding: 0,

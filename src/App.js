@@ -4,6 +4,7 @@ import { DragDropContext } from 'react-beautiful-dnd';
 import { BoardProvider, useBoard } from './context/BoardContext';
 import Column from './components/Column';
 import TaskForm from './components/TaskForm';
+import Navbar from './components/Navbar';
 
 function InnerApp() {
   const { data, setData } = useBoard();
@@ -86,6 +87,7 @@ function InnerApp() {
 
   return (
     <div className="app" style={{backgroundColor:'#111827', height:'700px'}}>
+      <Navbar/>
       <h1 style={{color:'white'}}>Task Board</h1>
      
       <TaskForm onSubmit={add} />
@@ -112,6 +114,7 @@ function InnerApp() {
 export default function App() {
   return (
     <BoardProvider>
+
       <InnerApp />
     </BoardProvider>
   );

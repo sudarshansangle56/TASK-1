@@ -16,14 +16,14 @@ function TaskForm({ onSubmit }) {
     <form style={{  display:'flex', gap:'7px', padding: '10px',}}
     onSubmit={handleSubmit}>
       <input
-        style={{borderRadius:'2px', border: '4px solid #164b99ad',padding:'10px', boxShadow: '0px 0px 7px #854CE6, 0px 0px 7px #142c51ad'
+        style={{borderRadius:'2px', border: '4px solid',padding:'10px', boxShadow: '0px 0px 7px #854CE6, 0px 0px 7px #142c51ad'
         }}
         value={title}
         onChange={(e) => setTitle(e.target.value)}
         placeholder="title"
       />
       <textarea
-     style={{borderRadius:'2px', border: '4px solid #164b99ad',padding:'10px', boxShadow: '0px 0px 7px #854CE6, 0px 0px 7px #142c51ad'
+     style={{borderRadius:'2px', border: '4px solid',padding:'10px', boxShadow: '0px 0px 7px #854CE6, 0px 0px 7px #142c51ad'
      }}
         value={description}
         onChange={(e) => setDescription(e.target.value)}

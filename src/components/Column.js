@@ -4,7 +4,7 @@ import TaskCard from './TaskCard';
 
 function Column({ column, tasks, onDeleteTask }) {
   return (
-    <div className="column">
+    <div   className="column">
       <h2>{column.title}</h2>
       <Droppable droppableId={column.id}>
         {(provided) => (
